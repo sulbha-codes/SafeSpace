@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Report | SafeSpace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🟣 Header -->
+  <header class="header">
+    <h1>SafeSpace 💜</h1>
+    <p>Your trusted space for women’s safety</p>
+    <nav>
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='report.html'">Report</button>
+      <button onclick="location.href='emergency.html'">Emergency</button>
+      <button onclick="location.href='tips.html'">Safety Tips</button>
+    </nav>
+  </header>
+
+  <!-- 📄 Report Form Section -->
+  <main class="form-section">
+    <h2>Report an Unsafe Area</h2>
+    <p>Please help others by reporting any unsafe place you’ve experienced.</p>
+
+    <form>
+      <label for="name">Name (optional):</label>
+      <input type="text" id="name" placeholder="Your name" />
+
+      <label for="location">Location of Incident:</label>
+      <input type="text" id="location" placeholder="Area, Street, City" />
+
+      <label for="type">Type of Incident:</label>
+      <select id="type">
+        <option>Harassment</option>
+        <option>Stalking</option>
+        <option>Unsafe Lighting</option>
+        <option>Transport Issue</option>
+        <option>Other</option>
+      </select>
+
+      <label for="details">Description:</label>
+      <textarea id="details" rows="5" placeholder="Describe what happened..."></textarea>
+
+      <label for="photo">Upload Photo (optional):</label>
+      <input type="file" id="photo" />
+
+      <button type="submit">Submit Report</button>
+    </form>
+  </main>
+
+  <!-- 👣 Footer -->
+  <footer class="footer">
+    © 2025 SafeSpace | Built with care 💜
+  </footer>
+
+  <!-- 🔗 JavaScript -->
+  <script src="report.js"></script>
+</body>
+</html>

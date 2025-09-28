@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emergency | SafeSpace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🟣 Header -->
+  <header class="header">
+    <h1>SafeSpace 💜</h1>
+    <p>Your trusted space for women’s safety</p>
+    <nav>
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='report.html'">Report</button>
+      <button onclick="location.href='emergency.html'">Emergency</button>
+      <button onclick="location.href='tips.html'">Safety Tips</button>
+    </nav>
+  </header>
+
+  <!-- 🚨 Emergency Section -->
+  <main class="emergency-section">
+    <h2>Emergency Help</h2>
+    <p class="emotional-line">
+      We hope this page is never needed.  
+      But if it is — it should be easy, fast, and safe.
+    </p>
+
+    <div class="help-buttons">
+      <button onclick="callHelp()">📞 Call 112 – Women Helpline</button>
+      <button onclick="shareLocation()">📍 Share Your Location</button>
+      <button onclick="sendAlert()">🚨 Send Quick SMS Alert</button>
+    </div>
+
+    <p class="note">
+      These buttons simulate real-world emergency actions.  
+      In a production version, they would be connected to actual services or mobile features.
+    </p>
+  </main>
+
+  <!-- 👣 Footer -->
+<footer class="footer">
+  © 2025 SafeSpace | Built with care by Sulbha 💜
+</footer>
+
+  <!-- 🚨 Emergency Actions (for simulation) -->
+  <script>
+    function callHelp() {
+      alert("Dialing 112... Stay calm, help is on the way.");
+    }
+
+    function shareLocation() {
+      alert("Location shared with your trusted contacts (simulated).");
+    }
+
+    function sendAlert() {
+      alert("Emergency SMS alert sent to registered guardian (simulated).");
+    }
+  </script>
+
+</body>
+</html>
