@@ -6,7 +6,7 @@ The goal is to create a reliable digital companion that empowers women to feel s
 ---
 
 ## 🔗 Live Demo
-[Click here to view SafeSpace](https://sunny-pika-7dada0.netlify.app/)
+[Click here to view SafeSpace]https://safespace-demo.netlify.app/
 ---
 
 
