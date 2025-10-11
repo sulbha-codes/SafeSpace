@@ -60,12 +60,16 @@
         <option>Other</option>
       </select>
 
+<!-- Description textarea -->
       <label for="details">Description:</label>
       <textarea id="details" rows="5" placeholder="Describe what happened..."></textarea>
 
+<!-- Photo upload with preview -->
       <label for="photo">Upload Photo (optional):</label>
       <input type="file" id="photo" />
+      <img id="photopreview" style="display:none; max-width: 200px; margin-top: 10px;" alt="photopreview">
 
+      <!-- Submit button -->
       <button type="submit">Submit Report</button>
     </form>
   </main>
