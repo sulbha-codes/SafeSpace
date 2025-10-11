@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Report | SafeSpace</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!--
+    Instructions:
+    1. This page allows users to report unsafe areas or incidents.
+    2. Fill the form with details like name, location, type, description, and optionally upload a photo.
+    3. Submitted reports are saved locally and listed above the form.
+    4. Uploaded photo is previewed before submission.
+    5. Navigation buttons take you to other pages of SafeSpace.
+-->
 </head>
 <body>
 
@@ -13,6 +22,7 @@
     <h1>SafeSpace 💜</h1>
     <p>Your trusted space for women’s safety</p>
     <nav>
+      <!-- Navigation buttons -->
       <button onclick="location.href='index.html'">Home</button>
       <button onclick="location.href='report.html'">Report</button>
       <button onclick="location.href='emergency.html'">Emergency</button>
@@ -20,18 +30,27 @@
     </nav>
   </header>
 
+
+<!-- Dynamic list of reported areas -->
+<h3>Reported Unsafe Areas</h3>
+<ul id="reportedAreas"></ul>
+
   <!-- 📄 Report Form Section -->
   <main class="form-section">
     <h2>Report an Unsafe Area</h2>
     <p>Please help others by reporting any unsafe place you’ve experienced.</p>
 
+<!-- Report form -->
     <form>
+      <!-- Optional user name -->
       <label for="name">Name (optional):</label>
       <input type="text" id="name" placeholder="Your name" />
 
+<!-- Location input -->
       <label for="location">Location of Incident:</label>
       <input type="text" id="location" placeholder="Area, Street, City" />
 
+<!-- Type of incident selection -->
       <label for="type">Type of Incident:</label>
       <select id="type">
         <option>Harassment</option>
