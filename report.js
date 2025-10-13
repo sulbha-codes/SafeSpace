@@ -70,3 +70,107 @@ reportForm.addEventListener("submit", function(e) {
   // Reset the form
   reportForm.reset();
 });
+
+
+// ==========================
+// Show popup message
+// ==========================
+function showPopup(message) {
+  const popup = document.createElement('div');
+  popup.className = 'popup';
+  popup.textContent = message;
+  document.body.appendChild(popup);
+
+  // Remove popup after 2 seconds
+  setTimeout(() => popup.remove(), 2000);
+}
+
+
+// ==============================
+// Log actions to localStorage
+// ==============================
+function logAction(action) {
+  let actions = JSON.parse(localStorage.getItem('emergencyActions')) || [];
+  actions.push({ action: action, time: new Date().toLocaleString() });
+  localStorage.setItem('emergencyActions', JSON.stringify(actions));
+}
+
+
+// ========================================
+// Save unsafe areas (prevent duplicates)
+// ========================================
+function saveUnsafeArea(location) {
+  let areas = JSON.parse(localStorage.getItem('unsafeAreas')) || [];
+  if (!areas.includes(location)) { 
+    areas.push(location);
+    localStorage.setItem('unsafeAreas', JSON.stringify(areas));
+  }
+}
+
+
+// ==================================
+// Save full report in localStorage
+// ==================================
+function saveReport(report) {
+  let reports = JSON.parse(localStorage.getItem('reports')) || [];
+  reports.push({ ...report, time: new Date().toLocaleString() });
+  localStorage.setItem('reports', JSON.stringify(reports));
+  logAction(`Report submitted: ${report.location}`);
+  displayReportedAreas(); // Update UI immediately
+}
+
+
+// ============================
+// Quick Report Area Feature 📍
+// ============================
+function reportArea() {
+  const location = locationInput.value.trim(); // ✅ use top-level variable
+  if(location === ""){
+    showPopup("❌ Please enter a location");
+    return;
+  }
+  saveUnsafeArea(location);
+  logAction(`Reported unsafe area: ${location}`);
+  showPopup(`📍 Reported: ${location}`);
+
+  // Clear input after reporting
+  locationInput.value = ""; // ✅ top-level variable 
+  displayReportedAreas();
+}
+
+
+// ===================================
+// Display list of reported areas 📍
+// ===================================
+function displayReportedAreas() {
+  reportedAreasList.innerHTML = ""; // ✅ top-level variable
+
+  const areas = JSON.parse(localStorage.getItem('unsafeAreas')) || [];
+  areas.forEach(area => {
+    const li = document.createElement('li');
+    li.textContent = area;
+    reportedAreasList.appendChild(li); // ✅ top-level variable
+  });
+}
+
+
+// =====================
+// Initial display on page load
+// =====================
+displayReportedAreas();
+
+
+// =====================
+// Photo preview feature 📸
+// ====================
+photoInput.addEventListener('change', function() {
+  const file = this.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      photoPreview.src = e.target.result; // ✅ use top-level variable
+      photoPreview.style.display = 'block';
+    };
+    reader.readAsDataURL(file);
+  }
+});
