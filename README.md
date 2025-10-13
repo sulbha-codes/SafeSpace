@@ -11,8 +11,9 @@
 3. [Tech Stack](#tech-stack)  
 4. [Future Enhancements](#future-enhancements)  
 5. [Lessons Learned](#lessons-learned)  
-6. [Acknowledgment](#acknowledgment)  
-7. [Author](#author)
+6. [Acknowledgment](#acknowledgment)
+7. [Note](#note)   
+8. [Author](#author)
 
 ---
 
@@ -102,6 +103,11 @@ Built with care by **Sulbha**,
 for every woman who deserves to feel safe — and every developer who believes **code can care**.  
 
 > “Every line of code should make someone feel safer, calmer, or more capable.”
+
+---
+<a name="note"></a>
+## 🧩 Note
+This project was initially developed offline, so the commit history doesn’t show the full progress. At that time, I wasn’t fully aware of the importance of regular commits to reflect real growth. This project reminds me how much I’ve learned — both technically and personally — since then.
 
 ---
 
