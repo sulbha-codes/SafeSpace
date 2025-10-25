@@ -109,6 +109,25 @@ nav button:hover {
   background-color: #a347a6;
 }
 
+
+/* Keyframes first */
+@keyframes slideFade {
+  0% { opacity: 0; transform: translateY(-15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.poetic-hook {
+  animation: slideFade 1s ease forwards;
+  font-style: italic;
+  color: #800080;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f9f0ff, #f2e6ff);
+  box-shadow: 0 4px 12px rgba(128,0,128,0.1);
+}
 /* ======================== FORM SECTION ======================== */
 .form-section {
   padding: 3rem 1rem;
