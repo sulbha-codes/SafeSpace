@@ -116,18 +116,51 @@ nav button:hover {
   100% { opacity: 1; transform: translateY(0); }
 }
 
+
+/* Container styling */
 .poetic-hook {
-  animation: slideFade 1s ease forwards;
   font-style: italic;
-  color: #800080;
-  font-size: 1.2rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem 2.5rem;
   border-radius: 12px;
   background: linear-gradient(135deg, #f9f0ff, #f2e6ff);
-  box-shadow: 0 4px 12px rgba(128,0,128,0.1);
+  box-shadow: 0 6px 20px rgba(128,0,128,0.2);
+  color: #800080;
+
+/* ==================ANIMATIONS==================== */
+animation: slideFade 1.5s ease forwards,float 4s ease-in-out 1.5s infinite;
 }
+
+/* Gradient shimmer + typing-like effect on each line */
+.poetic-hook span{
+  display: inline-block;
+  background: linear-gradient(90deg, #eea0ee, #ded8e3, #f9f0ff);
+  background-size: 200% 100%;
+  animation: gradientShift 3s ease infinite;
+}
+
+/* ============Fade in + slide up once ================*/
+@keyframes slideFade {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0px);}
+}
+
+/* Float up and down infinitely */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Gradient shimmer keyframes */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 /* ======================== FORM SECTION ======================== */
 .form-section {
   padding: 3rem 1rem;
