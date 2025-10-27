@@ -46,7 +46,30 @@ const reportedAreasList = document.getElementById('reportedAreas'); // 📍
 const photoPreview = document.getElementById('photopreview'); // ✅
 
 
-// =====================
+// =================================================
+// Function to show thank-you message at top center
+// =================================================
+
+function showThankYou(message) {
+  const thankYou = document.createElement("div")
+  thankYou.textContent = message;
+  thankYou.classList.add("thank-you");
+
+  // Ensure message appears above everything
+  thankYou.style.zIndex = 9999;//
+  document.body.appendChild(thankYou);
+
+  //Force reflow to trigger CSS animation
+  thankYou.offsetHeight;
+
+  // Keep visible for 4 seconds,then fade out
+
+  setTimeout(() => {
+    thankYou.classList.add("removing"); 
+    setTimeout (() => thankYou.remove(), 500);
+  }, 3000); // 800ms = 8 seconds
+}
+
 // Handle form submission 📝
 // =====================
 reportForm.addEventListener("submit", function(e) {
@@ -66,6 +89,8 @@ reportForm.addEventListener("submit", function(e) {
 
   // Save report to localStorage
   saveReport({ name, location, type, details }); 
+
+  showThankYou("✅ Report submitted! Thank you for helping make your community safer 💜");
 
   // Reset the form
   reportForm.reset();
