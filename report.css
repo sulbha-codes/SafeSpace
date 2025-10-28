@@ -1,0 +1,15 @@
+/* 🌿 Gentle Animations for Report Page */
+
+/* 1. Soft fade-in for the form */
+form {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
