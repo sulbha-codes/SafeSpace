@@ -5,3 +5,33 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+/* ================================
+   Emergency Buttons (Pulse + Glow
+   ================================*/
+
+.emergency-button {
+background-color: #ff4d4d;
+color: white;
+padding: 12px 24px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 1rem;
+animation: pulse 2s infinite, glow 1.5s infinite alternate;
+margin: 8px;
+   }
+
+   /*Pulse Animation*/
+   @keyframes pulse {
+    0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+   }
+
+   /* Glow Animation */
+@keyframes glow {
+  0% { box-shadow: 0 0 5px red; }
+  50% { box-shadow: 0 0 20px red; }
+  100% { box-shadow: 0 0 5px red; }
+}
