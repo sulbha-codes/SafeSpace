@@ -5,11 +5,24 @@
 🌍 [**Live Demo →**](https://safespace-demo.netlify.app/) 
 ---
 
+### Key Skills & Concepts
+
+![JavaScript Functions](https://img.shields.io/badge/Functions-JavaScript-blue?logo=javascript&logoColor=white)
+![ES6 Default Parameters](https://img.shields.io/badge/Default%20Parameters-ES6-yellow?logo=javascript&logoColor=black)
+![Conditional Logic](https://img.shields.io/badge/Ternary%20Operator-Conditional-orange?logo=javascript&logoColor=white)
+![DOM Manipulation](https://img.shields.io/badge/DOM%20Manipulation-JS-green?logo=javascript&logoColor=white)
+![CSS Animation](https://img.shields.io/badge/CSS%20Animation-Slide/Fade-purple?logo=css3&logoColor=white)
+![Asynchronous Timers](https://img.shields.io/badge/setTimeout-Asynchronous-red?logo=javascript&logoColor=white)
+![Arrow Functions](https://img.shields.io/badge/Arrow%20Functions-ES6-lightblue?logo=javascript&logoColor=white)
+![Dynamic Styling](https://img.shields.io/badge/Dynamic%20Styling-CSS/JS-pink?logo=css3&logoColor=white)
+
+
 ## 📚 Table of Contents
 1. [Project Overview](#project-overview)  
 2. [Key Features](#key-features)  
 3. [Tech Stack](#tech-stack)  
-4. [Future Enhancements](#future-enhancements)  
+4. [Concepts & Skills](#concepts--skills)
+5. [Future Enhancements](#future-enhancements)  
 5. [Lessons Learned](#lessons-learned)  
 6. [Acknowledgment](#acknowledgment)
 7. [Note](#note)   
@@ -71,6 +84,19 @@ It’s more than just a web app — it’s a reflection of how technology can be
 | **LocalStorage** | Temporary data storage (reports, actions) |
 
 ---
+<a name="concepts--skills"></a>
+### 🛠️ Concepts & Skills Used in `showEmergencyPopup`
+
+| Concept in Code | Skill / Keyword |Application in SafeSpace|
+|-----------------|----------------------------------|------------------|
+| Function + Parameters | JavaScript Functions & Modular Code | Built a reusable function to display emergency popups dynamically |
+| Default Parameters | ES6 Default Parameters | Implemented default parameter handling for flexible popup types |
+| Ternary Operator | Conditional Logic / Ternary Expressions | Used concise conditional logic to apply different styles for info vs alert messages |
+| DOM Manipulation | Dynamic DOM Manipulation | Created and appended popup elements dynamically to the page |
+| CSS Animation Trigger | Animation Triggering via JS | Triggered smooth slide and fade animations programmatically |
+| Asynchronous Timer | Asynchronous Programming / setTimeout | Scheduled auto-dismiss of popups using JavaScript timers |
+| Arrow Functions | ES6 Arrow Functions | Used modern arrow functions for concise asynchronous callbacks |
+| Dynamic Styling / Class | Dynamic Styling & Class Management | Applied different classes and styles to popups dynamically for improved UX |
 
 <a name="future-enhancements"></a>
 ## 🔮 Future Enhancements
