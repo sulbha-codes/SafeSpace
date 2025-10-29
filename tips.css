@@ -1,0 +1,27 @@
+/* Calm but attention-catching animation for "Remember This" */
+.strength-message {
+  animation: fadeInCalm 1.2s ease-out forwards, gentlePulse 6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Smooth fade-in with slight upward rise */
+@keyframes fadeInCalm {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Very slow, soothing pulse — symbolizes steady strength */
+@keyframes gentlePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
