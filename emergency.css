@@ -35,3 +35,27 @@ margin: 8px;
   50% { box-shadow: 0 0 20px red; }
   100% { box-shadow: 0 0 5px red; }
 }
+
+/* ========================================
+   Emergency Popup Messages (Slide + Fade)
+===========================================*/
+.emergency-popup {
+  position: fixed;
+  top: 150px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffdddd;
+  color: #a10000;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  z-index: 9999;
+  animation: slideDownFade 0.5s ease forwards;
+}
+
+/* Slide + Fade Animation */
+@keyframes slideDownFade {
+  from { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
