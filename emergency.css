@@ -1,24 +1,69 @@
 
+/* ============================================================
+   🆘 SafeSpace - emergency.css
+   ============================================================
+   👩‍💻 Developer Instructions
+
+   This stylesheet contains all styles specific to the **Emergency Page** 
+   of the SafeSpace project. It defines layout, color themes, button effects, 
+   and alert animations to ensure a calm yet responsive user experience.
+
+   💡 Developer Notes:
+   1. Color and spacing values are controlled using CSS variables at the top
+      for easy customization and consistency across the app.
+   2. The `pulse`, `glow`, and `slideDownFade` animations are local to this file
+      — do not move them unless reused by other pages.
+   3. The `.emergency-popup` class is designed for temporary alert messages
+      triggered by JavaScript (see `emergency.js`).
+   4. Keep button sizes and section paddings consistent to maintain visual harmony.
+   5. Avoid inline colors; always use `var(--variable)` for maintainability.
+   6. If new emergency actions are added (e.g., "Share Location"), 
+      reuse `.help-buttons` or `.emergency-button` styles for uniform look.
+
+    ⚠️ Note: If emergency buttons or popups are reused elsewhere, 
+      consider moving animations to animations.css. 
+
+   Focus: Accessible, empathetic design that balances urgency with calm UX.
+   ============================================================ =================*/
+
+
+/* ============================================================
+   🎨 Theme Variables (for easy customization)
+   ============================================================ */
+:root {
+  --primary: #800080;        /* Main purple tone */
+  --primary-light: #a347a6;  /* Hover / accent shade */
+  --background-light: #fff0f5; /* Section background */
+  --text-dark: #222;
+  --text-muted: #666;
+  --alert-bg: #ffdddd;
+  --alert-text: #a10000;
+  --alert-strong: #ff4d4d;
+  --radius: 10px;
+  --shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+
 /* ======================== EMERGENCY SECTION ======================== */
 .emergency-section {
   padding: 3rem 1rem;
   max-width: 600px;
   margin: auto;
-  background-color: #fff0f5;
-  border-radius: 10px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  background-color: var(--background-light);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
   text-align: center;
 }
 
 .emergency-section h2 {
-  color: #800080;
+  color: var(--primary);
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
 .emergency-section .emotional-line {
   font-style: italic;
-  color: #444;
+  color: var(--text-dark);
   margin-bottom: 2rem;
 }
 
@@ -30,7 +75,7 @@
 }
 
 .help-buttons button {
-  background-color: #800080;
+  background-color: var(--primary);
   color: white;
   padding: 15px 20px;
   font-size: 1rem;
@@ -41,12 +86,12 @@
 }
 
 .help-buttons button:hover {
-  background-color: #a347a6;
+  background-color: var(--primary-light);
 }
 
 .note {
   font-size: 0.85rem;
-  color: #666;
+  color: var(--text-muted);
   margin-top: 2rem;
 }
 
@@ -64,7 +109,7 @@ html, body {
    ================================*/
 
 .emergency-button {
-background-color: #ff4d4d;
+background-color: var(--alert-strong);
 color: white;
 padding: 12px 24px;
 border: none;
@@ -84,9 +129,9 @@ margin: 8px;
 
    /* Glow Animation */
 @keyframes glow {
-  0% { box-shadow: 0 0 5px red; }
-  50% { box-shadow: 0 0 20px red; }
-  100% { box-shadow: 0 0 5px red; }
+  0% { box-shadow: 0 0 5px var(--alert-strong);}
+  50% { box-shadow: 0 0 20px var(--alert-strong); }
+  100% { box-shadow: 0 0 5px var(--alert-strong); }
 }
 
 /* ========================================
@@ -97,8 +142,8 @@ margin: 8px;
   top: 150px; 
   left: 50%;
   transform: translateX(-50%);
-  background-color: #ffdddd;
-  color: #a10000;
+  background-color: var(--alert-bg);
+  color: var(--alert-text);
   padding: 16px 24px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
