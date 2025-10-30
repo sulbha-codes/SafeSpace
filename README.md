@@ -18,18 +18,17 @@
 
 
 ## 📚 Table of Contents
-1. [Project Overview](#project-overview)  
-2. [Key Features](#key-features)  
-3. [Tech Stack](#tech-stack) 
-4. [Emergency.js Story](#emergency-js-story) 
-5. [Debugging & Problem Solving](#debugging--problem-solving)
-6. [Concepts & Skills](#concepts--skills)
-7. [Future Enhancements](#future-enhancements)  
-8. [Lessons Learned](#lessons-learned)  
+1. [Project Overview](#project-overview)
+2. [Key Features](#key-features)
+3. [Tech Stack](#tech-stack)
+4. [Emergency.js Story](#behind-the-scenes-building-emergencyjs)
+5. [Debugging & Problem Solving](#when-the-welcome-went-silent)
+6. [Concepts & Skills](#concepts--skills-used-in-showemergencypopup)
+7. [Future Enhancements](#future-enhancements)
+8. [Lessons Learned](#lessons-learned)
 9. [Acknowledgment](#acknowledgment)
-10. [Note](#note)   
+10. [Note](#note)
 11. [Author](#author)
-
 ---
 
 <a name="project-overview"></a>
