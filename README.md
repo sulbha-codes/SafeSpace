@@ -17,20 +17,6 @@
 ![Dynamic Styling](https://img.shields.io/badge/Dynamic%20Styling-CSS/JS-pink?logo=css3&logoColor=white)
 
 
-## 📚 Table of Contents
-1. [Project Overview](#project-overview)
-2. [Key Features](#-key-features)
-3. [Tech Stack](#tech-stack)
-4. [Emergency.js Story](#behind-the-scenes-building-emergencyjs)
-5. [Debugging & Problem Solving](#debugging-story-when-the-welcome-went-silent)
-6. [Concepts & Skills](#concepts--skills-used-in-showemergencypopup)
-7. [Handling Edge Cases](#handling-edge-cases-in-safespace)
-8. [Future Enhancements](#future-enhancements)
-9. [Lessons Learned](#lessons-learned)
-10. [Acknowledgment](#acknowledgment)
-11. [Note](#note)
-12. [Author](#author)
----
 
 ## 🧠 Project Overview
 
