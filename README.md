@@ -2,7 +2,7 @@
 
 > “Technology can’t remove fear — but it can help bring safety closer.”
 
-🌍 [**Live Demo →**](https://safespace-demo.netlify.app/) 
+🌍 [**Live Demo →**](https://safe-space-theta.vercel.app/) 
 ---
 
 ### Key Skills & Concepts
