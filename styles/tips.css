@@ -1,0 +1,149 @@
+/* ======================== SAFETY TIPS SECTION ======================== */
+.tips-section {
+  padding: 3rem 1rem;
+  max-width: 700px;
+  margin: auto;
+  background-color: #fdf4ff;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.tips-section h2 {
+  color: #800080;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.tips-section .intro {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.tips-list {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.tips-list li {
+  background-color: #fff;
+  border-left: 5px solid #800080;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.strength-message {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #ffe6f0;
+  border-left: 6px solid #800080;
+  border-radius: 8px;
+}
+
+.strength-message h3 {
+  color: #800080;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.strength-message p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+
+/* Calm but attention-catching animation for "Remember This" */
+.strength-message {
+  animation: fadeInCalm 1.2s ease-out forwards, gentlePulse 6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Smooth fade-in with slight upward rise */
+@keyframes fadeInCalm {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Very slow, soothing pulse — symbolizes steady strength */
+@keyframes gentlePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+/* Inviting Button Animation */
+#newTipBtn {
+  margin-top: 2rem;
+  background: linear-gradient(135deg, #b565e0, #ffb3ec);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(128, 0, 128, 0.2);
+  animation: pulseButton 2s infinite;
+}
+
+#newTipBtn:hover {
+  background: linear-gradient(135deg, #a34edb, #ff8edc);
+  box-shadow: 0 6px 14px rgba(128, 0, 128, 0.35);
+  transform: scale(1.05);
+}
+
+#newTipBtn:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(128, 0, 128, 0.25);
+}
+
+/* Subtle Pulse Animation */
+@keyframes pulseButton {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 10px rgba(128, 0, 128, 0.2);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(128, 0, 128, 0.35);
+  }
+}
+
+/* Alive Fade-In Animation for Tips */
+@keyframes aliveTip {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-3px) scale(1.02);
+  }
+  80% {
+    transform: translateY(0) scale(0.98);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.tips-list li {
+  animation: aliveTip 0.8s ease-out;
+}
