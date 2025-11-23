@@ -166,11 +166,6 @@ for every woman who deserves to feel safe — and every developer who believes *
 
 ---
 
-## 🧩 Note
-This project was initially developed offline, so the commit history doesn’t show the full progress. It reminds me how much I’ve learned — both technically and personally — since then.
-
----
-
 ## 📫 Author
 
 **Sulbha Rasal**  
